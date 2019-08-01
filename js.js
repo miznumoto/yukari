@@ -332,7 +332,7 @@ function change(il) {
     }
     else if (getId == "i8" || getId == "p_i8") {
         if (getId == "i8") {
-            document.getElementById("cardName").innerHTML = "[夏島☆ｼｰｻｲﾄﾞ]水本ゆかり";
+            document.getElementById("cardName").innerHTML = "[夏島☆ｼｰｻｲﾄﾞ･S]水本ゆかり";
             $(".commentIn *").remove();
             $("#fst_cmi_fst").append('<div class="comment_comment">みんな､南の島をとても楽しんでいて…ふふっ､笑顔が眩しいです｡私は､少し休憩を…｡隣に座ってもいいですか? 遊ぶ時間も､プロデューサーさんと語らう時間も､楽しみたいですから…</div>');
             $("#fst_cmi_scd").append('<div class="comment_comment">広大な海に…心まで洗われます</div>');
@@ -349,7 +349,7 @@ function change(il) {
             $("#trd_cmi_scd").append('<div class="comment_comment">少し休んだら､また海で遊びに…プロデューサーさんも､ぜひ♪</div>');
             $("#trd_cmi_trd").append('<div class="comment_comment">仲間やプロデューサーさんと味わう､海の楽しさ…今の私だから､感じられる喜びですね｡今日はたくさん､思い出を作りましょう</div>');
         } else {
-            document.getElementById("cardName").innerHTML = "[夏島☆ｼｰｻｲﾄﾞ]水本ゆかり+";
+            document.getElementById("cardName").innerHTML = "[夏島☆ｼｰｻｲﾄﾞ･S]水本ゆかり+";
             $(".commentIn *").remove();
             $("#fst_cmi_fst").append('<div class="comment_comment">ようこそお越しくださいました♪これより紡がれる旋律は､妖精たちが歌い踊る夏の幻想…｡忘れられない夢の世界へ､私たちがみなさんを連れ出します｡さぁ､耳を澄ませて…始めましょう!</div>');
             $("#fst_cmi_scd").append('<div class="comment_comment">広大な海に…心まで洗われます</div>');
