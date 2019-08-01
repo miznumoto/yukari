@@ -1,0 +1,22 @@
+else if (getId == "i" || getId == "p_i") {
+		if (getId == "p_i") {
+			document.getElementById("cardName").innerHTML = "[ｳﾞｫﾔｰｼﾞｭ･ﾋｰﾗｰ]水本ゆかり+";
+		} else {
+			document.getElementById("cardName").innerHTML = "[ｳﾞｫﾔｰｼﾞｭ･ﾋｰﾗｰ]水本ゆかり";
+		}
+		$(".commentIn *").remove();
+		$("#fst_cmi_fst").append('<div class="comment_comment"></div>');
+		$("#fst_cmi_scd").append('<div class="comment_comment"></div>');
+		$("#fst_cmi_scd").append('<div class="comment_comment"></div>');
+		$("#fst_cmi_scd").append('<div class="comment_comment"></div>');
+		$("#fst_cmi_scd").append('<div class="comment_comment"></div>');
+		$("#scd_cmi_fst").append('<div class="comment_comment"></div>');
+		$("#scd_cmi_fst").append('<div class="comment_comment"></div>');
+		$("#scd_cmi_fst").append('<div class="comment_comment"></div>');
+		$("#scd_cmi_fst").append('<div class="comment_comment"></div>');
+		$("#scd_cmi_scd").append('<div class="comment_comment"></div>');
+		$("#scd_cmi_trd").append('<div class="comment_comment"></div>');
+		$("#trd_cmi_fst").append('<div class="comment_comment"></div>');
+		$("#trd_cmi_scd").append('<div class="comment_comment"></div>');
+		$("#trd_cmi_trd").append('<div class="comment_comment"></div>');
+	}

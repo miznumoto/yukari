@@ -1,0 +1,2 @@
+<li class="i1" onclick="change('i')"><a class="list-group-item-action"></a></li>
+<li class="i1" onclick="change('p_')"><a class="list-group-item-action">+</a></li>
