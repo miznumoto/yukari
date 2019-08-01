@@ -7,6 +7,7 @@ $(document).ready(function () {
     var getId = sessionStorage.getItem('img');
     if (getId == null) {
         getId = "i1";
+   
     }
     console.log(getId);
     change(getId);
