@@ -7,6 +7,7 @@ $(document).ready(function () {
     var getId = sessionStorage.getItem('img');
     if (getId == null) {
         getId = "i1";
+
     }
     console.log(getId);
     change(getId);
@@ -208,8 +209,8 @@ function change(il) {
         }
 
     } else if (getId == "i4" || getId == "p_i4") {
-        document.getElementById("mangaBtn").style.display="新しいものに挑戦";
-        $("#modaltitle").text("");
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("新しいものに挑戦");
         if (getId == "i4") {
             document.getElementById("cardName").innerHTML = "[ｳﾞｫﾔｰｼﾞｭ･ﾋｰﾗｰ]水本ゆかり";
             $(".commentIn *").remove();
