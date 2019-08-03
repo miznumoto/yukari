@@ -7,7 +7,7 @@ $(document).ready(function () {
     var getId = sessionStorage.getItem('img');
     if (getId == null) {
         getId = "i1";
-   
+
     }
     console.log(getId);
     change(getId);
@@ -15,16 +15,22 @@ $(document).ready(function () {
 function change(il) {
     var getId = il;
     sessionStorage.setItem('img', getId);
-    sessionStorage.setItem('data' , getId);
+    sessionStorage.setItem('data', getId);
     var comment = "$('.commentIn')";
     var chImg = "img/" + getId + ".jpg";
+    var mangaImg = "img/g_" + getId + ".jpg";
     var chJimg = "img/j_" + getId + ".jpg";
     var tag = document.getElementById("detailcontentbox");
     document.getElementById("detailimg").setAttribute("src", chImg);
+    document.getElementById("mangaImg").setAttribute("src", mangaImg);
+    document.getElementById("mangaBtn").style.display="none";
     if (getId.indexOf("p_") > -1) {
         var plusJimg = getId.substring(2);
+        var plusGimg= getId.substring(2);
         chJimg = "img/j_" + plusJimg + ".jpg";
+        mangaImg = "img/g_" + plusGimg + ".jpg";
         document.getElementById("detailNameImg").setAttribute("src", chJimg);
+        document.getElementById("mangaImg").setAttribute("src", mangaImg);
     } else {
         document.getElementById("detailNameImg").setAttribute("src", chJimg);
     }
@@ -143,6 +149,8 @@ function change(il) {
         }
 
     } else if (getId == "i3" || getId == "p_i3") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("呪わないでーっ");
         if (getId == "i3") {
             document.getElementById("cardName").innerHTML = "[ｳﾞｫﾔｰｼﾞｭ･ﾋｰﾗｰ]水本ゆかり";
             $(".commentIn *").remove();
@@ -201,6 +209,8 @@ function change(il) {
         }
 
     } else if (getId == "i4" || getId == "p_i4") {
+        document.getElementById("mangaBtn").style.display="新しいものに挑戦";
+        $("#modaltitle").text("");
         if (getId == "i4") {
             document.getElementById("cardName").innerHTML = "[ｳﾞｫﾔｰｼﾞｭ･ﾋｰﾗｰ]水本ゆかり";
             $(".commentIn *").remove();
@@ -237,6 +247,8 @@ function change(il) {
             $("#trd_cmi_trd").append('<div class="comment_comment">みんなのﾊｰﾓﾆｰで､ﾌｧﾝに笑顔をあげられて嬉しいです｡でも､一番嬉しいのはプロデューサーさんの笑顔｡特別ですから…ふふ♪</div>');
         }
     } else if (getId == "i5" || getId == "p_i5") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("アタシの話聞きたい？♪");
         if (getId == "p_i5") {
             document.getElementById("cardName").innerHTML = "[ｳｪﾃﾞｨﾝｸﾞ]I.C水本ゆかり+";
             $(".commentIn *").remove();
@@ -256,6 +268,8 @@ function change(il) {
             $("#trd_cmi_trd").append('<div class="comment_comment">この花嫁修業を無事に終えたら､私､いつでもお嫁に行けますね｡ふふふ､大丈夫､まだｱｲﾄﾞﾙはやめませんよ､プロデューサーさん</div>');
         }
     } else if (getId == "i6" || getId == "p_i6") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("精一杯のおもてなし");
         if (getId == "i6") {
             document.getElementById("cardName").innerHTML = "[ｽｸｰﾙﾒﾛﾃﾞ]ｨｰ水本ゆかり";
             $(".commentIn *").remove();
@@ -294,6 +308,8 @@ function change(il) {
         }
     }
     else if (getId == "i7" || getId == "p_i7") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("海の宝石");
         if (getId == "i7") {
             document.getElementById("cardName").innerHTML = "[夏島☆ｼｰｻｲﾄﾞ]水本ゆかり";
             $(".commentIn *").remove();
@@ -331,6 +347,8 @@ function change(il) {
         }
     }
     else if (getId == "i8" || getId == "p_i8") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("海の宝石");
         if (getId == "i8") {
             document.getElementById("cardName").innerHTML = "[夏島☆ｼｰｻｲﾄﾞ･S]水本ゆかり";
             $(".commentIn *").remove();
@@ -403,9 +421,10 @@ function change(il) {
             $("#trd_cmi_scd").append('<div class="comment_comment">このまま､ふたりで秋のﾋﾟｸﾆｯｸに出かけたら素敵でしょうね♪</div>');
             $("#trd_cmi_trd").append('<div class="comment_comment">このまま…｡今はこのままが…いいです｡静かに季節を感じ､味わっていたいんです｡プロデューサーさんと迎えた､実りの秋を…</div>');
         }
-
     }
     else if (getId == "i10" || getId == "p_i10") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("こう…ではなく");
         if (getId == "i10") {
             document.getElementById("cardName").innerHTML = "[爽やかｺﾝﾌｨﾁｭｰﾙ]水本ゆかり";
             $(".commentIn *").remove();
@@ -443,6 +462,8 @@ function change(il) {
         }
 
     } else if (getId == "i11" || getId == "p_i11") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("眠れる令嬢");
         if (getId == "i11") {
             document.getElementById("cardName").innerHTML = "[清純令嬢]水本ゆかり";
             $(".commentIn *").remove();
@@ -480,6 +501,8 @@ function change(il) {
         }
 
     } else if (getId == "i12" || getId == "p_i12") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("大事なこと");
         if (getId == "i12") {
             document.getElementById("cardName").innerHTML = "[素顔のお嬢様]水本ゆかり]";
             $(".commentIn *").remove();
@@ -589,6 +612,8 @@ function change(il) {
             $("#trd_cmi_trd").append('<div class="comment_comment">いつか本物の花嫁になる日…その時は､今よりもっと輝く私の姿を､プロデューサーさんに見ていただきたいですね…</div>');
         }
     } else if (getId == "i15" || getId == "p_i15") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("質問はありませんか");
         if (getId == "i15") {
             document.getElementById("cardName").innerHTML = "[冬のﾊｰﾓﾆｰ]水本ゆかり";
             $(".commentIn *").remove();
@@ -627,6 +652,8 @@ function change(il) {
 
     }
     else if (getId == "i16" || getId == "p_i16") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("ゆかりの水泳特訓");
         if (getId == "i16") {
             document.getElementById("cardName").innerHTML = "[ｴﾌｫｰﾄﾌﾞﾘﾗﾝﾃ]水本ゆかり";
             $(".commentIn *").remove();
@@ -665,6 +692,8 @@ function change(il) {
 
     }
     else if (getId == "i17" || getId == "p_i17") {
+        document.getElementById("mangaBtn").style.display="";
+        $("#modaltitle").text("頭を空っぽにして");
         if (getId == "i17") {
             document.getElementById("cardName").innerHTML = "[華やぎのﾋﾞﾌﾞﾗｰﾄ水本ゆかり";
             $(".commentIn *").remove();
@@ -696,7 +725,7 @@ function change(il) {
             $("#scd_cmi_fst").append('<div class="comment_comment">そう､目を逸らさずに…ｶﾒﾗの向こうまで､熱い想いを届けます!</div>');
             $("#scd_cmi_scd").append('<div class="comment_comment">艶やかに舞い踊る姿…プロデューサーさんに刻み込んでみせます</div>');
             $("#scd_cmi_trd").append('<div class="comment_comment">聴いて､観て､感じて…!</div>');
-            $("#trd_cmi_fst").append('<div class="comment_comment">不安はありません｡プロデューサーさんが､導いてくれますから…</div>');
+            $("#trd_cmi_fst").append('<div class="comment_comment"> </div>');
             $("#trd_cmi_scd").append('<div class="comment_comment">今だけは…プロデューサーさんは私の虜｡離しはしませんよ…♪</div>');
             $("#trd_cmi_trd").append('<div class="comment_comment">新しい音､新しい色､新しい世界…プロデューサーさんが次に導くのは､どんな私でしょうか｡どんな私でも､お見せします……!</div>');
         }
